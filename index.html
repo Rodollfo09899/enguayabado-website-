@@ -22,6 +22,35 @@
     <link rel="preload" as="image" href="images/patacon-sensei-enguayabado-small.webp" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/fixes.css" />
+    <script>
+        (function(e, t, r, n) {
+            var o, c, s;
+            o = e.document, c = t.children[0], s = o.createElement("script"),
+            e.StorefrontSDKObject = "StorefrontSDK",
+            e[e.StorefrontSDKObject] = {
+                executeCommand: function(t, r) {
+                    e[e.StorefrontSDKObject].buffer.push([t, r]);
+                },
+                buffer: []
+            },
+            s.async = 1,
+            s.src = 'https://web-apps.cdn4dd.com/webapps/sdk-storefront/latest/sdk.js',
+            t.insertBefore(s, c);
+        })(window, document.head);
+
+        StorefrontSDK.executeCommand('renderFloatingButton', {
+            businessId: 21307799,
+            businessSlug: 'Enguayabado',
+            floatingBar: true,
+            position: 'bottom',
+            buttonAlignment: 'center',
+            backgroundColor: 'transparent',
+            buttonBackgroundColor: '#D92128',
+            borderColor: 'transparent',
+            buttonText: 'Order Pickup & Delivery',
+            showModal: true
+        });
+    </script>
 </head>
 
 <body>
@@ -153,7 +182,7 @@
                     <p class="muted">1501 S El Camino Real, San Mateo, CA. Confirma horarios por Instagram o WhatsApp antes de manejar.</p>
                     <div class="btn-row"><a class="btn btn--primary" href="https://www.google.com/maps/search/?api=1&query=815%20South%20B%20Street%20San%20Mateo%20CA" target="_blank" rel="noopener noreferrer">Open Maps</a><a class="btn btn--ghost" href="https://wa.me/14153496404" target="_blank" rel="noopener noreferrer">WhatsApp</a></div>
                 </div>
-                <iframe class="map-embed" title="Enguayabado location" loading="lazy" src="https://www.google.com/maps?q=815%20South%20B%20Street%2C%20San%20Mateo%2C%20CA&output=embed"></iframe>
+                <iframe class="map-embed" title="Enguayabado location" loading="lazy" src="https://www.google.com/maps?q=815%20South%20B%20Street%2C%20San%20Mateo%20CA&output=embed"></iframe>
             </div>
         </section>
 
